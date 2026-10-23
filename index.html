@@ -35,7 +35,7 @@ const chapterIntro={
 9:['🔺 Same shape, different size!','Discover how similar triangles work, match corresponding sides, and use proportions to solve for missing lengths.'],
 10:['⭕ Circles become simple when you know the rules!','Learn the key circle terms, formulas and relationships, then solve circle questions step by step.']};
 const SUPABASE_URL='https://fftbbjufazylnlhcnida.supabase.co';
-const SUPABASE_KEY='sb_publishable_uuVBiqlBugutdZrFAmWzlA_m6V8kRTR';
+const SUPABASE_KEY='sb_publishable_uuVBiqlBugutdZrFAmWzlA_mV6k8RTR';
 let allowed=[]; let activeCode=''; let deviceId=''; let pendingChapter=null;
 function getDeviceId(){let k='budabloom_web_device_id';let v=localStorage.getItem(k);if(!v){v='BBWEB-'+cryptoRandom();localStorage.setItem(k,v)}return v}
 function cryptoRandom(){try{const a=new Uint32Array(3);crypto.getRandomValues(a);return [...a].map(x=>x.toString(36)).join('').toUpperCase()}catch(e){return Math.random().toString(36).slice(2).toUpperCase()}}
