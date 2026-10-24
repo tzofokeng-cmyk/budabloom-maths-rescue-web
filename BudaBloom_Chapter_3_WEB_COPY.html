@@ -1,0 +1,314 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BudaBloom Maths Rescue — Like & Unlike Terms</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#06120e;color:#eef8f1;font-family:Arial,sans-serif;line-height:1.5}
+header{background:#0c251b;padding:20px 18px;border-bottom:1px solid #24583e;position:sticky;top:0;z-index:5}
+.wrap{max-width:760px;margin:auto;padding:18px}.brand{font-size:22px;font-weight:800;color:#b8f5c8}.sub{font-size:16px;color:#d6e7dc}
+.card,.topic{background:#10261d;border:1px solid #286044;border-radius:20px;padding:18px;margin:16px 0}
+h1{font-size:30px}h2{color:#c8f8d3;font-size:27px}h3{color:#9ff0b5;font-size:20px}
+.learn{background:#081b14;border-radius:16px;padding:18px;margin:14px 0;white-space:pre-line}
+.example{white-space:pre-line;font-size:18px}
+.question,.examq{background:#091c15;border-radius:15px;padding:16px;margin:14px 0}
+.qtitle{font-size:18px;font-weight:700;margin-bottom:10px}
+button{width:100%;border:0;border-radius:13px;padding:15px;margin:7px 0;font-size:17px;background:#17402e;color:white;text-align:left}
+button:disabled{opacity:1}button.opt.correct{background:#18733d;outline:3px solid #7af0a4}
+button.opt.wrong{background:#7a2525;outline:3px solid #ff8b8b}
+button.eopt.selected{outline:3px solid #c8f8d3;background:#24583e}
+.feedback{margin-top:10px;padding:13px;border-radius:12px;display:none}
+.feedback.show{display:block}.feedback.good{background:#12532e}.feedback.bad{background:#572727}
+.hidden{display:none}.primary{background:#c8f8d3;color:#082015;text-align:center;font-weight:800}
+.result{padding:16px;border-radius:15px;font-size:23px;font-weight:800;margin-top:14px}
+.memo{background:#081b14;border-radius:14px;padding:15px;margin:12px 0}
+.note{background:#173c2b;padding:14px;border-radius:13px}
+</style></head>
+<body>
+<!-- BB_CHAPTER_INTRO_FINAL -->
+<div class="bb-final-chapter-intro" style="max-width:760px;margin:0 auto 22px;padding:28px 22px;border:3px solid #55d88b;border-radius:24px;background:#0b281c;color:#f5fff8;box-sizing:border-box;font-family:Arial,sans-serif;">
+  <div style="font-size:16px;font-weight:900;letter-spacing:.6px;color:#7ff0b0;">🌱 BudaBloom • Maths Rescue</div>
+  <div style="font-size:13px;font-weight:800;letter-spacing:1px;color:#ffd85a;margin-top:12px;">GRADE 9 • CHAPTER 3</div>
+  <h1 style="font-size:32px;line-height:1.15;margin:8px 0 10px;color:#f5fff8;">Like &amp; Unlike Terms</h1>
+  <div style="font-size:21px;font-weight:900;color:#ffd85a;margin:10px 0 14px;">See it. Understand it. Solve it.</div>
+  <p style="font-size:18px;line-height:1.6;margin:0 0 14px;">Learn how to identify like and unlike terms before simplifying expressions, with clear examples and practice.</p>
+  <div style="margin-top:16px;padding:15px;border-radius:14px;background:#173c2b;font-size:17px;line-height:1.6;">
+    <b>What you get:</b><br>
+    ✅ Simple explanations<br>
+    ✅ Worked examples before practice<br>
+    ✅ Step-by-step corrections when you make a mistake<br>
+    ✅ Practice questions and a chapter test
+  </div>
+  <div style="margin-top:14px;padding:14px 15px;border-radius:14px;background:#123b2a;font-size:17px;line-height:1.5;">
+    <b>Chapter price: R39</b><br>
+    Buy only the chapter you need. You do not have to buy all 8 chapters.
+  </div>
+
+<button class="primary" style="width:100%;margin-top:18px;padding:14px;border:0;border-radius:12px;font-size:18px;font-weight:800;background:#55d88b;color:#062015;" onclick="start()">START CHAPTER →</button>
+</div>
+
+<div class="card" style="border:2px solid #55d88b"><h2>🧠 BudaBloom Step-by-Step Rule</h2><p><b>Never skip a step.</b> First identify what the question is asking. Then remember the rule. Then apply the rule one step at a time. Finally check the answer.</p><p><b>When multiplying signs:</b><br>+ × + = +<br>+ × − = −<br>− × + = −<br>− × − = +</p><p><b>Same signs → positive. Different signs → negative.</b></p><p>Whenever a sign rule is used, the learner will see it before the calculation continues.</p></div>
+<header><div class="wrap"><div class="brand">BudaBloom • Maths Rescue</div><div class="sub">Grade 9 — Like & Unlike Terms</div></div></header>
+<main class="wrap">
+<div id="intro" class="card" style="display:none"></div>
+<div id="lesson" class="hidden">
+<section class="topic lesson"><h2>1. What is a Term?</h2><div class="learn"><h3>Learn this first — no prior knowledge needed</h3><p>An <b>algebraic expression</b> is a maths phrase made from numbers, letters and signs.</p><p>A <b>term</b> is one part of that expression. The <b>+ or − sign separates terms</b>.</p><p>For example:</p><p class="example">5x + 3</p><p>There are <b>2 terms</b>:</p><p class="example">Term 1 = 5x
+Term 2 = 3</p><p><b>Important:</b> 5x is ONE term. Do not split it into 5 and x. The 5 and x are joined by multiplication: 5 × x.</p><p>A term can be a number alone (7), a letter alone (x), or a number and letter together (4x).</p><p>If a minus sign is before a term, that term is negative. Example: <b>3x − 2y + 5</b> has the terms <b>3x, −2y and 5</b>.</p><h3>Worked example — slowly</h3><p class="example">Look at: 3x − 2y + 5
+
+Step 1: Start at the left. 3x is the first term.
+Step 2: The − sign tells us the next term is negative: −2y.
+Step 3: The + sign starts the next term: 5.
+
+Answer: 3x, −2y, 5
+
+There are 3 terms.</p></div><div class="question"><div class="qtitle">Q1. In 5x + 3, what are the terms?</div><button class="opt" data-correct="0">5 and x + 3</button><button class="opt" data-correct="1">5x and 3</button><button class="opt" data-correct="0">5x + 3 is one term</button><div class="feedback"></div></div><div class="question"><div class="qtitle">Q2. How many terms are in 2a + 4b − 7?</div><button class="opt" data-correct="0">2</button><button class="opt" data-correct="1">3</button><button class="opt" data-correct="0">4</button><div class="feedback"></div></div><div class="question"><div class="qtitle">Q3. What are the terms in 6m − 9?</div><button class="opt" data-correct="0">6 and m − 9</button><button class="opt" data-correct="1">6m and −9</button><button class="opt" data-correct="0">6m − 9 and 0</button><div class="feedback"></div></div></section><section class="topic lesson"><h2>2. Like Terms</h2><div class="learn"><h3>Learn this first</h3><p><b>Like terms</b> are terms that have exactly the same <b>letter part</b>.</p><p>Look at <b>4x</b>. The number 4 is the number in front. The letter <b>x</b> is the variable (letter) part.</p><p>Look at <b>7x</b>. The number 7 is different, but the letter part is still <b>x</b>.</p><p>So <b>4x and 7x are like terms</b>.</p><p>Examples:</p><p class="example">3x and 8x → like
+5a and 2a → like
+4m² and 9m² → like</p><p>But:</p><p class="example">3x and 8y → unlike
+4m and 4 → unlike</p><p><b>Easy rule:</b> Ignore the number in front for now. Compare the letter part. If the letter part matches exactly, the terms are like.</p><h3>Worked example — slowly</h3><p class="example">Compare 4x and 7x.
+
+Step 1: Look at the first term: 4x. The letter part is x.
+Step 2: Look at the second term: 7x. The letter part is x.
+Step 3: x matches x.
+
+Therefore 4x and 7x are LIKE TERMS.</p></div><div class="question"><div class="qtitle">Q1. Which pair contains like terms?</div><button class="opt" data-correct="1">4x and 7x</button><button class="opt" data-correct="0">3a and 3b</button><button class="opt" data-correct="0">5m and 2</button><div class="feedback"></div></div><div class="question"><div class="qtitle">Q2. Are 6p and 2p like terms?</div><button class="opt" data-correct="1">Yes</button><button class="opt" data-correct="0">No</button><button class="opt" data-correct="0">Only if p = 2</button><div class="feedback"></div></div><div class="question"><div class="qtitle">Q3. Which pair is like?</div><button class="opt" data-correct="1">7a² and 3a²</button><button class="opt" data-correct="0">5x and 5y</button><button class="opt" data-correct="0">4m and 4</button><div class="feedback"></div></div></section><section class="topic lesson"><h2>3. Unlike Terms</h2><div class="learn"><h3>Learn this first</h3><p><b>Unlike terms</b> do not have the same letter part.</p><p>Different letters mean unlike:</p><p class="example">3x and 4y
+
+x ≠ y
+
+Therefore: unlike terms.</p><p>Different powers also mean unlike. For example, <b>x</b> and <b>x²</b> are not the same letter part.</p><p class="example">2x and 5x²
+
+x and x² are different
+
+Therefore: unlike terms.</p><p><b>Important:</b> Unlike terms cannot be combined into one term. We do not add their front numbers just because both terms contain numbers.</p><h3>Worked example — slowly</h3><p class="example">Look at: 3x + 4y
+
+Step 1: Look at 3x. Its letter part is x.
+Step 2: Look at 4y. Its letter part is y.
+Step 3: Compare x and y. They are different.
+
+Therefore 3x and 4y are UNLIKE TERMS.
+
+So 3x + 4y stays 3x + 4y.</p></div><div class="question"><div class="qtitle">Q1. Which pair contains unlike terms?</div><button class="opt" data-correct="0">3x and 9x</button><button class="opt" data-correct="1">4a and 4b</button><button class="opt" data-correct="0">7m² and 2m²</button><div class="feedback"></div></div><div class="question"><div class="qtitle">Q2. Are 5x and 2x² like terms?</div><button class="opt" data-correct="0">Yes</button><button class="opt" data-correct="1">No</button><button class="opt" data-correct="0">Only when x = 1</button><div class="feedback"></div></div><div class="question"><div class="qtitle">Q3. Which pair is unlike?</div><button class="opt" data-correct="0">8p and 3p</button><button class="opt" data-correct="0">6q² and q²</button><button class="opt" data-correct="1">4r and 9s</button><div class="feedback"></div></div></section><section class="topic lesson"><h2>4. Combining Like Terms</h2><div class="learn"><h3>Learn</h3><p>We can combine ONLY like terms.
+
+To combine like terms:
+1. Look at the variable part.
+2. Add or subtract the numbers in front.
+3. Keep the same variable part.
+
+The numbers in front are called coefficients, but you do not need to memorise that word yet.</p><h3>Worked example</h3><p class="example">3x + 5x
+
+Both terms have x, so they are like.
+
+3 + 5 = 8
+
+Keep x:
+
+3x + 5x = 8x</p></div><div class="question"><div class="qtitle">Q1. Which expression can be combined?</div><button class="opt" data-correct="1">3x + 5x</button><button class="opt" data-correct="0">3x + 5y</button><button class="opt" data-correct="0">3x + 5</button><div class="feedback"></div></div><div class="question"><div class="qtitle">Q2. What is 4a + 2a?</div><button class="opt" data-correct="1">6a</button><button class="opt" data-correct="0">6</button><button class="opt" data-correct="0">8a</button><div class="feedback"></div></div><div class="question"><div class="qtitle">Q3. What is 9m − 4m?</div><button class="opt" data-correct="1">5m</button><button class="opt" data-correct="0">5</button><button class="opt" data-correct="0">13m</button><div class="feedback"></div></div></section><section class="topic lesson"><h2>5. Unlike Terms Stay Separate</h2><div class="learn"><h3>Learn</h3><p>If terms are unlike, we do NOT combine them.
+
+For example:
+4x + 3y
+
+x and y are different, so the terms are unlike.
+
+We cannot turn this into 7xy or 7.
+The correct expression stays:
+
+4x + 3y</p><h3>Worked example</h3><p class="example">7x + 2
+
+7x has a variable.
+2 is a number by itself.
+
+They are unlike terms, so they cannot be combined.
+
+Answer: 7x + 2</p></div><div class="question"><div class="qtitle">Q1. Can 4x + 3y be combined?</div><button class="opt" data-correct="0">Yes</button><button class="opt" data-correct="1">No</button><button class="opt" data-correct="0">Only by adding 4 + 3</button><div class="feedback"></div></div><div class="question"><div class="qtitle">Q2. What is 5a + 2b?</div><button class="opt" data-correct="0">7ab</button><button class="opt" data-correct="0">7</button><button class="opt" data-correct="1">5a + 2b</button><div class="feedback"></div></div><div class="question"><div class="qtitle">Q3. What is 7x + 2?</div><button class="opt" data-correct="0">9x</button><button class="opt" data-correct="0">9</button><button class="opt" data-correct="1">7x + 2</button><div class="feedback"></div></div></section><section class="topic lesson"><h2>6. Simplifying Expressions</h2><div class="learn"><h3>Learn</h3><p>To simplify an expression:
+
+1. Identify every term.
+2. Find the like terms.
+3. Combine only the like terms.
+4. Leave unlike terms alone.
+
+Do not combine terms just because they contain numbers. First check the variable part.</p><h3>Worked example</h3><p class="example">Simplify:
+
+2x + 3x + 4
+
+Step 1: Like terms are 2x and 3x.
+Step 2: 2 + 3 = 5.
+Step 3: Keep x → 5x.
+Step 4: 4 is unlike, so it stays.
+
+Answer: 5x + 4</p></div><div class="question"><div class="qtitle">Q1. What should you do first when simplifying?</div><button class="opt" data-correct="0">Combine every number</button><button class="opt" data-correct="1">Identify the terms and find the like terms</button><button class="opt" data-correct="0">Change every letter to a number</button><div class="feedback"></div></div><div class="question"><div class="qtitle">Q2. Simplify 3x + 2x + 4.</div><button class="opt" data-correct="1">5x + 4</button><button class="opt" data-correct="0">9x</button><button class="opt" data-correct="0">5x + 6</button><div class="feedback"></div></div><div class="question"><div class="qtitle">Q3. Simplify 6a − 2a + 3b.</div><button class="opt" data-correct="1">4a + 3b</button><button class="opt" data-correct="0">4ab + 3</button><button class="opt" data-correct="0">8a + 3b</button><div class="feedback"></div></div><div style="margin:18px 0 8px"><button class="primary" type="button" onclick="openFinalTest()">📝 START 12-QUESTION FINAL TEST</button></div>
+</section>
+<section id="final" class="topic hidden">
+<h2>📝 Final Chapter Test</h2>
+<p><b>12 mixed questions.</b> Choose one answer for each question, then submit. You need <b>8/12</b> to PASS.</p>
+<div class="note"><b>Important:</b> Try all 12 questions before submitting. After submission, your result and the full step-by-step memo will appear.</div>
+<div class="examq" data-answer="1" data-why="In 7x + 2y − 5, the + and − signs separate the terms. The terms are 7x, 2y and −5."><div class="qtitle">Q1. Which are the terms in 7x + 2y − 5?</div><button class="eopt" data-i="0">7, x, 2, y, 5</button><button class="eopt" data-i="1">7x, 2y, −5</button><button class="eopt" data-i="2">7x + 2y and −5 only</button></div>
+<div class="examq" data-answer="0" data-why="6p and 2p both have the same variable part p. The coefficients 6 and 2 can be different."><div class="qtitle">Q2. Which pair is like?</div><button class="eopt" data-i="0">6p and 2p</button><button class="eopt" data-i="1">6p and 2q</button><button class="eopt" data-i="2">6p and 2</button></div>
+<div class="examq" data-answer="1" data-why="4a has a and 4b has b. Since a and b are different variables, the terms are unlike."><div class="qtitle">Q3. Which pair is unlike?</div><button class="eopt" data-i="0">4a and 9a</button><button class="eopt" data-i="1">4a and 9b</button><button class="eopt" data-i="2">7x and 2x</button></div>
+<div class="examq" data-answer="0" data-why="4 + 3 = 7. Both terms have x, so keep x: 7x."><div class="qtitle">Q4. Simplify 4x + 3x.</div><button class="eopt" data-i="0">7x</button><button class="eopt" data-i="1">7</button><button class="eopt" data-i="2">12x</button></div>
+<div class="examq" data-answer="2" data-why="9 − 5 = 4. Both terms have m, so keep m: 4m."><div class="qtitle">Q5. Simplify 9m − 5m.</div><button class="eopt" data-i="0">14m</button><button class="eopt" data-i="1">4</button><button class="eopt" data-i="2">4m</button></div>
+<div class="examq" data-answer="1" data-why="3x and 2x are like terms, so 3 + 2 = 5 and we keep x. The 4 has no x, so it stays separate: 5x + 4."><div class="qtitle">Q6. Simplify 3x + 2x + 4.</div><button class="eopt" data-i="0">5x</button><button class="eopt" data-i="1">5x + 4</button><button class="eopt" data-i="2">9x</button></div>
+<div class="examq" data-answer="2" data-why="6a and −2a are like terms. 6 − 2 = 4, so they become 4a. The 3b is unlike and stays separate: 4a + 3b."><div class="qtitle">Q7. Simplify 6a − 2a + 3b.</div><button class="eopt" data-i="0">8a + 3b</button><button class="eopt" data-i="1">4ab + 3</button><button class="eopt" data-i="2">4a + 3b</button></div>
+<div class="examq" data-answer="0" data-why="7a² and 3a² have the same variable part a². The number in front may be different."><div class="qtitle">Q8. Which pair is like?</div><button class="eopt" data-i="0">7a² and 3a²</button><button class="eopt" data-i="1">7a and 3a²</button><button class="eopt" data-i="2">7a and 3b</button></div>
+<div class="examq" data-answer="1" data-why="5x has x while 2x² has x². The powers are different, so the variable parts do not match."><div class="qtitle">Q9. Are 5x and 2x² like terms?</div><button class="eopt" data-i="0">Yes</button><button class="eopt" data-i="1">No</button></div>
+<div class="examq" data-answer="2" data-why="5a has a and 2b has b. Different variables cannot be combined, so the expression stays 5a + 2b."><div class="qtitle">Q10. What is 5a + 2b?</div><button class="eopt" data-i="0">7ab</button><button class="eopt" data-i="1">7a + b</button><button class="eopt" data-i="2">5a + 2b</button></div>
+<div class="examq" data-answer="0" data-why="7x and 2x are like terms. Add the coefficients: 7 + 2 = 9. Keep x: 9x. The 3 stays separate."><div class="qtitle">Q11. Simplify 7x + 2x − 3.</div><button class="eopt" data-i="0">9x − 3</button><button class="eopt" data-i="1">9x + 3</button><button class="eopt" data-i="2">14x − 3</button></div>
+<div class="examq" data-answer="1" data-why="3x and 4x are like terms, so 3 + 4 = 7 and we keep x. The 2y is unlike and stays separate: 7x + 2y."><div class="qtitle">Q12. Simplify 3x + 2y + 4x.</div><button class="eopt" data-i="0">7xy</button><button class="eopt" data-i="1">7x + 2y</button><button class="eopt" data-i="2">9x + 2y</button></div>
+<button class="primary" onclick="submitExam()">Submit Final Test</button>
+<div id="result"></div>
+</section>
+</div>
+</main>
+<script>
+let current=0;
+const lessons=[...document.querySelectorAll(".lesson")];
+const final=document.getElementById("final");
+
+function start(){
+ document.getElementById("intro").classList.add("hidden");
+ document.getElementById("lesson").classList.remove("hidden");
+ lessons.forEach(x=>x.classList.remove("hidden"));
+ final.classList.add("hidden");
+ window.scrollTo({top:0,behavior:"smooth"});
+}
+function show(n){
+ lessons.forEach(x=>x.classList.remove("hidden"));
+ final.classList.add("hidden");
+ window.scrollTo({top:0,behavior:"smooth"});
+}
+function openFinalTest(){
+ lessons.forEach(x=>x.classList.add("hidden"));
+ final.classList.remove("hidden");
+ window.scrollTo({top:0,behavior:"smooth"});
+}
+
+document.querySelectorAll(".question").forEach(q=>{
+ q.querySelectorAll(".opt").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+   if(q.dataset.answered==="1") return;
+   q.dataset.answered="1";
+   const correct=q.querySelector(".opt[data-correct='1']");
+   const feedback=q.querySelector(".feedback");
+   const isCorrect=btn.dataset.correct==="1";
+   q.querySelectorAll(".opt").forEach(x=>x.disabled=true);
+   correct.classList.add("correct");
+   if(!isCorrect) btn.classList.add("wrong");
+   feedback.className="feedback show "+(isCorrect?"good":"bad");
+   feedback.innerHTML=isCorrect
+    ? "✓ <b>Correct!</b>"
+    : "✗ <b>Not yet — let’s go step by step.</b><br><b>Correct answer:</b> "+correct.textContent+
+      "<br><br><b>How to see it:</b> "+(q.querySelector(".opt[data-correct='1']").textContent)+
+      "<br><br><button class=\"primary retry-question\" onclick=\"retryQuestion(this.closest('.question'))\">↻ Retry Question</button>";
+  });
+ });
+});
+
+function retryQuestion(q){
+ q.dataset.answered="0";
+ q.querySelectorAll(".opt").forEach(x=>{x.disabled=false; x.classList.remove("correct","wrong");});
+ const feedback=q.querySelector(".feedback");
+ feedback.className="feedback";
+ feedback.innerHTML="";
+}
+
+document.querySelectorAll(".examq").forEach(q=>{
+ q.querySelectorAll(".eopt").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+   q.querySelectorAll(".eopt").forEach(x=>x.classList.remove("selected"));
+   btn.classList.add("selected");
+   q.dataset.choice=btn.dataset.i;
+  });
+ });
+});
+
+function submitExam(){
+ let score=0;
+ const rows=[];
+ document.querySelectorAll(".examq").forEach((q,i)=>{
+  const choice=q.dataset.choice;
+  const correct=Number(q.dataset.answer);
+  const ok=choice!==undefined && Number(choice)===correct;
+  if(ok) score++;
+  q.querySelectorAll(".eopt").forEach(x=>x.classList.remove("correct","wrong"));
+  const correctBtn=q.querySelectorAll(".eopt")[correct];
+  correctBtn.classList.add("correct");
+  if(choice!==undefined && !ok) q.querySelectorAll(".eopt")[Number(choice)].classList.add("wrong");
+  const chosen=choice===undefined?"No answer":q.querySelectorAll(".eopt")[Number(choice)].textContent;
+  const correctText=correctBtn.textContent;
+  rows.push(`<div class="memo"><b>${q.querySelector(".qtitle").textContent}</b><p>Your answer: <b>${chosen}</b></p><p>Correct answer: <b>${correctText}</b></p><p><b>Step-by-step:</b><br>${q.dataset.why}</p></div>`);
+ });
+ const pass=score>=8;
+ document.getElementById("result").innerHTML=`<div class="result ${pass?"good":"bad"}">${pass?"🎉 PASS":"Keep practising"} — ${score}/12</div><h3>📘 Final Test Memo — Step by Step</h3>${rows.join("")}`;
+ document.getElementById("result").scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+</script>
+
+<script id="bb-beginner-feedback">
+(function(){
+function explanation(q){
+ const t=q.querySelector('.qtitle')?.textContent.trim()||'';
+ const ans=q.querySelector('.opt[data-correct="1"]')?.textContent.trim()||'';
+ if(t.includes('In 5x + 3')) return 'Step 1: The + sign separates the terms.\nStep 2: The first part is 5x.\nStep 3: 5x is one term; do not split 5 and x.\nStep 4: The second part is 3.\nTherefore the terms are 5x and 3.';
+ if(t.includes('How many terms are in 2a + 4b')) return 'Step 1: The + sign separates 2a from 4b.\nStep 2: The − sign separates 4b from 7.\nStep 3: The terms are 2a, 4b and −7.\nTherefore there are 3 terms.';
+ if(t.includes('What are the terms in 6m')) return 'Step 1: 6m is the first term.\nStep 2: The − sign means the next term is negative.\nStep 3: The second term is −9.\nTherefore the terms are 6m and −9.';
+ if(t.includes('Which pair contains like terms')) return 'Step 1: Look only at the letter part.\nStep 2: 4x has x.\nStep 3: 7x also has x.\nStep 4: x matches x.\nTherefore 4x and 7x are like terms.';
+ if(t.includes('Are 6p and 2p')) return 'Step 1: 6p has the letter part p.\nStep 2: 2p has the letter part p.\nStep 3: p matches p.\nTherefore they are like terms. The numbers 6 and 2 do not have to be the same.';
+ if(t.includes('Which pair is like')) return 'Step 1: 7a² has the letter part a².\nStep 2: 3a² also has the letter part a².\nStep 3: The letter and power match exactly.\nTherefore they are like terms.';
+ if(t.includes('Which pair contains unlike')) return 'Step 1: Compare the letter parts.\nStep 2: 4a has a.\nStep 3: 4b has b.\nStep 4: a and b are different letters.\nTherefore the terms are unlike.';
+ if(t.includes('Are 5x and 2x²')) return 'Step 1: 5x has x as its letter part.\nStep 2: 2x² has x² as its letter part.\nStep 3: x and x² are not the same.\nTherefore they are unlike terms.';
+ if(t.includes('Which pair is unlike')) return 'Step 1: Compare 4r and 9s.\nStep 2: The first has r.\nStep 3: The second has s.\nStep 4: r and s are different letters.\nTherefore 4r and 9s are unlike terms.';
+ if(t.includes('Which expression can be combined')) return 'Step 1: 3x has x.\nStep 2: 5x has x.\nStep 3: The letter parts match.\nTherefore they are like terms and can be combined.';
+ if(t.includes('What is 4a + 2a')) return 'Step 1: 4a and 2a are like because both have a.\nStep 2: Add the numbers in front: 4 + 2 = 6.\nStep 3: Keep the letter a.\nAnswer: 6a.';
+ if(t.includes('What is 9m')) return 'Step 1: 9m and 4m are like because both have m.\nStep 2: Subtract the numbers: 9 − 4 = 5.\nStep 3: Keep m.\nAnswer: 5m.';
+ if(t.includes('Can 4x + 3y')) return 'Step 1: 4x has x.\nStep 2: 3y has y.\nStep 3: x and y are different.\nTherefore the terms are unlike and cannot be combined.';
+ if(t.includes('What is 5a + 2b')) return 'Step 1: 5a has a.\nStep 2: 2b has b.\nStep 3: a and b are different.\nTherefore they cannot be combined. The answer stays 5a + 2b.';
+ if(t.includes('What is 7x + 2')) return 'Step 1: 7x has x.\nStep 2: 2 has no variable.\nStep 3: They are unlike.\nTherefore they cannot be combined. Answer: 7x + 2.';
+ if(t.includes('What should you do first')) return 'Step 1: Before calculating, identify each term.\nStep 2: Compare the variable parts.\nStep 3: Find the like terms.\nOnly then should you combine them.';
+ if(t.includes('Simplify 3x + 2x + 4')) return 'Step 1: 3x and 2x are like because both have x.\nStep 2: Add their numbers: 3 + 2 = 5.\nStep 3: Keep x: 5x.\nStep 4: 4 is unlike, so leave it alone.\nAnswer: 5x + 4.';
+ if(t.includes('Simplify 6a')) return 'Step 1: 6a and 2a are like because both have a.\nStep 2: 6 − 2 = 4.\nStep 3: Keep a: 4a.\nStep 4: 3b is unlike, so keep it.\nAnswer: 4a + 3b.';
+ return 'Start by looking at each term. Compare the letter part carefully. If the letter part is exactly the same, the terms are like. If it is different, they are unlike.';
+}
+function apply(){document.querySelectorAll('.question').forEach(q=>{q.querySelectorAll('.opt').forEach(btn=>{btn.addEventListener('click',()=>setTimeout(()=>{const fb=q.querySelector('.feedback');if(fb&&q.dataset.answered==='1'){const ok=btn.dataset.correct==='1';const e=explanation(q).replace(/\n/g,'<br>');fb.innerHTML=(ok?'✓ <b>Correct!</b>':'✗ <b>Not yet.</b><br><b>Correct answer:</b> '+q.querySelector('.opt[data-correct="1"]').textContent)+'<br><br><b>How did you get there?</b><br>'+e+(ok?'':'<br><br><button class="primary retry-question" onclick="retryQuestion(this.closest(\'.question\'))">↻ Retry Question</button>');}},0);});});});}
+window.addEventListener('DOMContentLoaded',apply);
+})();
+</script><script id="bb-step-by-step-final">
+(function(){
+const E={
+'In 5x + 3, what are the terms?':`Step 1: Look for the + or − signs. They separate terms.<br><br>Step 2: In <b>5x + 3</b>, the + sign separates <b>5x</b> from <b>3</b>.<br><br>Step 3: <b>5x</b> stays together. The 5 and x are multiplied: 5 × x. They are NOT two separate terms.<br><br>Step 4: Therefore the two terms are <b>5x</b> and <b>3</b>.`,
+'How many terms are in 2a + 4b − 7?':`Step 1: Start at the left: <b>2a</b> is term 1.<br><br>Step 2: The + sign separates <b>4b</b>. That is term 2.<br><br>Step 3: The − sign tells us the last term is <b>−7</b>. That is term 3.<br><br>Answer: <b>3 terms</b>.`,
+'What are the terms in 6m − 9?':`Step 1: <b>6m</b> is the first term.<br><br>Step 2: The − sign belongs to the next term, so the second term is <b>−9</b>.<br><br>Answer: <b>6m</b> and <b>−9</b>.`,
+'Which pair contains like terms?':`Step 1: Look at the letter part of each term.<br><br>Step 2: <b>4x</b> has the letter part <b>x</b>.<br><br>Step 3: <b>7x</b> also has the letter part <b>x</b>.<br><br>Step 4: The letter parts match exactly.<br><br>Therefore <b>4x and 7x are like terms</b>.`,
+'Are 6p and 2p like terms?':`Step 1: Look at <b>6p</b>. Its letter part is <b>p</b>.<br><br>Step 2: Look at <b>2p</b>. Its letter part is also <b>p</b>.<br><br>Step 3: The letter parts match.<br><br>Therefore they are <b>like terms</b>. The numbers 6 and 2 do not need to be the same.`,
+'Which pair is like?':`Step 1: Look at <b>7a²</b>. Its letter part is <b>a²</b>.<br><br>Step 2: Look at <b>3a²</b>. Its letter part is also <b>a²</b>.<br><br>Step 3: Both the letter and power match.<br><br>Therefore they are <b>like terms</b>.`,
+'Which pair contains unlike terms?':`Step 1: Look at <b>4a</b>. Its letter part is <b>a</b>.<br><br>Step 2: Look at <b>4b</b>. Its letter part is <b>b</b>.<br><br>Step 3: <b>a</b> and <b>b</b> are different letters.<br><br>Therefore they are <b>unlike terms</b>.`,
+'Are 5x and 2x² like terms?':`Step 1: <b>5x</b> has letter part <b>x</b>.<br><br>Step 2: <b>2x²</b> has letter part <b>x²</b>.<br><br>Step 3: <b>x</b> and <b>x²</b> are not the same.<br><br>Therefore they are <b>unlike terms</b>.`,
+'Which pair is unlike?':`Step 1: Compare <b>4r</b> and <b>9s</b>.<br><br>Step 2: The first has <b>r</b>.<br><br>Step 3: The second has <b>s</b>.<br><br>Step 4: r and s are different.<br><br>Therefore they are <b>unlike terms</b>.`,
+'Which expression can be combined?':`Step 1: <b>3x</b> has x.<br><br>Step 2: <b>5x</b> has x.<br><br>Step 3: The letter parts match.<br><br>Therefore they are like terms and can be combined.`,
+'What is 4a + 2a?':`Step 1: Both terms have <b>a</b>, so they are like terms.<br><br>Step 2: Add the numbers in front: <b>4 + 2 = 6</b>.<br><br>Step 3: Keep the letter <b>a</b>.<br><br>Answer: <b>6a</b>.`,
+'What is 9m − 4m?':`Step 1: Both terms have <b>m</b>, so they are like terms.<br><br>Step 2: Subtract the numbers: <b>9 − 4 = 5</b>.<br><br>Step 3: Keep <b>m</b>.<br><br>Answer: <b>5m</b>.`,
+'Can 4x + 3y be combined?':`Step 1: <b>4x</b> has x.<br><br>Step 2: <b>3y</b> has y.<br><br>Step 3: x and y are different letters.<br><br>Therefore the terms are unlike and <b>cannot be combined</b>.`,
+'What is 5a + 2b?':`Step 1: <b>5a</b> has a.<br><br>Step 2: <b>2b</b> has b.<br><br>Step 3: a and b are different.<br><br>Therefore we cannot combine them.<br><br>Answer: <b>5a + 2b</b>.`,
+'What is 7x + 2?':`Step 1: <b>7x</b> has a variable, x.<br><br>Step 2: <b>2</b> is a number by itself.<br><br>Step 3: They are unlike terms.<br><br>Therefore they stay separate.<br><br>Answer: <b>7x + 2</b>.`,
+'What should you do first when simplifying?':`Step 1: Identify every term.<br><br>Step 2: Look at the letter part of each term.<br><br>Step 3: Find which terms have matching letter parts.<br><br>Step 4: Only then combine the like terms.`,
+'Simplify 3x + 2x + 4.':`Step 1: Find the like terms: <b>3x</b> and <b>2x</b>.<br><br>Step 2: Add their numbers: <b>3 + 2 = 5</b>.<br><br>Step 3: Keep x: <b>5x</b>.<br><br>Step 4: The 4 has no x, so it is unlike and stays separate.<br><br>Answer: <b>5x + 4</b>.`,
+'Simplify 6a − 2a + 3b.':`Step 1: Find the like terms: <b>6a</b> and <b>−2a</b>.<br><br>Step 2: Calculate <b>6 − 2 = 4</b>.<br><br>Step 3: Keep a: <b>4a</b>.<br><br>Step 4: <b>3b</b> has b, so it is unlike and stays separate.<br><br>Answer: <b>4a + 3b</b>.`
+};
+function key(t){for(const k in E) if(t.includes(k)) return k; return null;}
+document.addEventListener('click',function(ev){
+ const btn=ev.target.closest('.question .opt'); if(!btn) return;
+ ev.stopImmediatePropagation(); ev.preventDefault();
+ const q=btn.closest('.question'); if(!q || q.dataset.answered==='1') return;
+ q.dataset.answered='1';
+ const correct=q.querySelector('.opt[data-correct="1"]');
+ const fb=q.querySelector('.feedback');
+ const ok=btn.dataset.correct==='1';
+ q.querySelectorAll('.opt').forEach(x=>x.disabled=true);
+ correct.classList.add('correct'); if(!ok) btn.classList.add('wrong');
+ const exp=E[key(q.querySelector('.qtitle').textContent.trim())] || 'Step 1: Identify the terms.<br><br>Step 2: Compare their letter parts.<br><br>Step 3: Apply the rule carefully.<br><br>Step 4: Check your answer.';
+ fb.className='feedback show '+(ok?'good':'bad');
+ fb.innerHTML=(ok?'✓ <b>Correct!</b>':'✗ <b>Not yet.</b><br><b>Correct answer:</b> '+correct.textContent)+'<br><br><b>How did you get there?</b><br>'+exp+(ok?'':'<br><br><button class="primary retry-question" type="button">↻ Retry Question</button>');
+},true);
+document.addEventListener('click',function(ev){
+ const r=ev.target.closest('.retry-question'); if(!r)return;
+ const q=r.closest('.question'); q.dataset.answered='0'; q.querySelectorAll('.opt').forEach(x=>{x.disabled=false;x.classList.remove('correct','wrong')}); const fb=q.querySelector('.feedback'); fb.className='feedback';fb.innerHTML='';
+},false);
+})();
+</script>
+</body></html>
