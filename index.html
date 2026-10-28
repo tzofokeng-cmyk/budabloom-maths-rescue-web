@@ -1,37 +1,146 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BudaBloom Maths Rescue — Grade 9</title>
 <style>
-body{margin:0;background:#f3faf6;color:#173d2b;font-family:Arial,sans-serif}
-.wrap{max-width:760px;margin:auto;padding:18px}
-.hero,.card{background:#fff;border-radius:20px;padding:20px;margin:14px 0;box-shadow:0 3px 14px #0001}
-.hero{background:linear-gradient(135deg,#e9f8ed,#fff8cc)}
-h1{color:#08783f}.brand{font-weight:800;color:#08783f}.gold{color:#a36d00}
-.card{text-decoration:none;color:#173d2b}.open{display:inline-block;background:#08783f;color:#fff;padding:11px 15px;border-radius:10px;font-weight:800;margin-top:10px}
-.num{font-size:14px;font-weight:800;color:#08783f;letter-spacing:.7px}
-a{text-decoration:none;color:inherit}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f8f4;
+  color: #183b25;
+}
+.wrap {
+  max-width: 900px;
+  margin: auto;
+  padding: 22px 16px 40px;
+}
+.hero {
+  background: linear-gradient(135deg, #dff2df, #fff4bd);
+  border-radius: 20px;
+  padding: 28px 20px;
+  text-align: center;
+  margin-bottom: 22px;
+}
+.hero h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+}
+.hero h2 {
+  margin: 0 0 12px;
+  font-size: 21px;
+}
+.hero p {
+  margin: 7px 0;
+  line-height: 1.5;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+.card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: white;
+  border: 1px solid #d7e5d8;
+  border-radius: 16px;
+  padding: 19px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.06);
+}
+.card:active { transform: scale(.99); }
+.chapter {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+.title {
+  font-size: 19px;
+  font-weight: bold;
+  min-height: 48px;
+}
+.open {
+  margin-top: 14px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #387a45;
+}
+.footer {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 13px;
+  color: #55705b;
+}
 </style>
 </head>
 <body>
 <div class="wrap">
-<section class="hero">
-<div class="brand">🌱 BudaBloom • Maths Rescue</div>
-<h1>Grade 9 Maths</h1>
-<p class="gold"><b>See it. Understand it. Solve it.</b></p>
-<p>Choose the chapter you need. Each chapter opens from its original file.</p>
-</section>
-<a class="card" href="BudaBloom_Chapter_1_GITHUB_EXACT.html"><div class="num">CHAPTER 1</div><h2>Direct & Indirect Proportion</h2><div class="open">OPEN CHAPTER →</div></a>
-<a class="card" href="BudaBloom_Chapter_2_GITHUB_NO_CODE_WITH_APPROVED_INTRO_CHAPTER_NAME.html"><div class="num">CHAPTER 2</div><h2>Algebraic Expressions</h2><div class="open">OPEN CHAPTER →</div></a>
-<a class="card" href="BudaBloom_Chapter_3_GITHUB_NO_CODE.html"><div class="num">CHAPTER 3</div><h2>Like & Unlike Terms</h2><div class="open">OPEN CHAPTER →</div></a>
-<a class="card" href="BudaBloom_Chapter_4_GITHUB_NO_CODE.html"><div class="num">CHAPTER 4</div><h2>Chapter 4</h2><div class="open">OPEN CHAPTER →</div></a>
-<a class="card" href="BudaBloom_Chapter_5_GITHUB_NO_CODE.html"><div class="num">CHAPTER 5</div><h2>Chapter 5</h2><div class="open">OPEN CHAPTER →</div></a>
-<a class="card" href="BudaBloom_Chapter_6_GITHUB_NO_CODE.html"><div class="num">CHAPTER 6</div><h2>Solving Algebraic Equations</h2><div class="open">OPEN CHAPTER →</div></a>
-<a class="card" href="BudaBloom_Chapter_7_GITHUB_NO_CODE.html"><div class="num">CHAPTER 7</div><h2>Geometry of Straight Lines and Angles</h2><div class="open">OPEN CHAPTER →</div></a>
-<a class="card" href="BudaBloom_Chapter_8_DIAGRAM_LABELS_ONLY_GITHUB.html"><div class="num">CHAPTER 8</div><h2>Chapter 8</h2><div class="open">OPEN CHAPTER →</div></a>
-<a class="card" href="Chapter_9_GitHub_Ready.html"><div class="num">CHAPTER 9</div><h2>Similar Triangles</h2><div class="open">OPEN CHAPTER →</div></a>
-<a class="card" href="BudaBloom_Chapter_10_GITHUB_READY_FINAL.html"><div class="num">CHAPTER 10</div><h2>Circle</h2><div class="open">OPEN CHAPTER →</div></a>
-<p style="text-align:center;color:#587264;padding:16px">BudaBloom Maths Rescue • Grade 9</p>
-</div></body></html>
+  <section class="hero">
+    <h1>BudaBloom Maths Rescue</h1>
+    <h2>Grade 9 Maths</h2>
+    <p><strong>See it. Understand it. Solve it.</strong></p>
+    <p>Choose the chapter you need and start learning.</p>
+  </section>
+
+  <section class="grid">
+      <a class="card" href="BudaBloom_Chapter_1_GITHUB_NO_CODE_WORKING.html">
+        <div class="chapter">Chapter 1</div>
+        <div class="title">Proportion</div>
+        <div class="open">OPEN CHAPTER →</div>
+      </a>
+      <a class="card" href="BudaBloom_Chapter_2_GITHUB_NO_CODE_WITH_APPROVED_INTRO_CHAPTER_NAME.html">
+        <div class="chapter">Chapter 2</div>
+        <div class="title">Algebraic Expressions</div>
+        <div class="open">OPEN CHAPTER →</div>
+      </a>
+      <a class="card" href="BudaBloom_Chapter_3_GITHUB_NO_CODE.html">
+        <div class="chapter">Chapter 3</div>
+        <div class="title">Like & Unlike Terms</div>
+        <div class="open">OPEN CHAPTER →</div>
+      </a>
+      <a class="card" href="BudaBloom_Chapter_4_GITHUB_NO_CODE.html">
+        <div class="chapter">Chapter 4</div>
+        <div class="title">Like Terms</div>
+        <div class="open">OPEN CHAPTER →</div>
+      </a>
+      <a class="card" href="BudaBloom_Chapter_5_GITHUB_NO_CODE.html">
+        <div class="chapter">Chapter 5</div>
+        <div class="title">Multiplication of Algebraic Expressions</div>
+        <div class="open">OPEN CHAPTER →</div>
+      </a>
+      <a class="card" href="BudaBloom_Chapter_6_GITHUB_NO_CODE.html">
+        <div class="chapter">Chapter 6</div>
+        <div class="title">Solving Algebraic Equations</div>
+        <div class="open">OPEN CHAPTER →</div>
+      </a>
+      <a class="card" href="BudaBloom_Chapter_7_GITHUB_NO_CODE.html">
+        <div class="chapter">Chapter 7</div>
+        <div class="title">Geometry of Straight Lines and Angles</div>
+        <div class="open">OPEN CHAPTER →</div>
+      </a>
+      <a class="card" href="BudaBloom_Chapter_8_GITHUB_NO_CODE.html">
+        <div class="chapter">Chapter 8</div>
+        <div class="title">Parallel Lines</div>
+        <div class="open">OPEN CHAPTER →</div>
+      </a>
+      <a class="card" href="Chapter_9_GitHub_Ready.html">
+        <div class="chapter">Chapter 9</div>
+        <div class="title">Similar Triangles</div>
+        <div class="open">OPEN CHAPTER →</div>
+      </a>
+      <a class="card" href="BudaBloom_Chapter_10_GITHUB_READY_FINAL.html">
+        <div class="chapter">Chapter 10</div>
+        <div class="title">Circle</div>
+        <div class="open">OPEN CHAPTER →</div>
+      </a>
+  </section>
+
+  <div class="footer">
+    BudaBloom Maths Rescue
+  </div>
+</div>
+</body>
+</html>
