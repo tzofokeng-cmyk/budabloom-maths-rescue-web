@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BudaBloom Maths Rescue - Chapter 10: Circle</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f4f8f4;color:#17351f;line-height:1.5}
+.container{max-width:760px;margin:auto;padding:14px}
+.card{background:white;border-radius:18px;padding:20px;margin:14px 0;box-shadow:0 3px 12px rgba(0,0,0,.08)}
+.hero{background:linear-gradient(135deg,#166534,#84cc16);color:white;text-align:center;padding:28px 18px;border-radius:20px}
+h1{font-size:30px;margin:5px 0} h2{color:#166534;margin-top:0} h3{color:#287a3b}
+.subtitle{font-size:17px}
+.goal{background:#fff7cf;border-left:5px solid #eab308;padding:12px;border-radius:10px}
+.rule{background:#ecfdf5;border:2px solid #86efac;padding:15px;border-radius:14px;font-size:18px}
+.formula{font-size:22px;font-weight:bold;text-align:center;background:#f0fdf4;padding:14px;border-radius:12px;margin:10px 0}
+.example{background:#f8fafc;border-left:5px solid #166534;padding:14px;border-radius:10px}
+.step{margin:8px 0;padding:9px;background:#f8fafc;border-radius:8px}
+.question{padding:12px;border:1px solid #d1d5db;border-radius:12px;margin:10px 0}
+input[type=text],input[type=number]{width:100%;padding:11px;border:1px solid #aaa;border-radius:8px;font-size:16px}
+button{background:#166534;color:white;border:0;padding:12px 18px;border-radius:10px;font-size:16px;font-weight:bold;margin-top:8px}
+button.secondary{background:#e5e7eb;color:#17351f}
+.feedback{margin-top:8px;padding:10px;border-radius:8px;display:none}
+.correct{background:#dcfce7;color:#166534}.wrong{background:#fee2e2;color:#991b1b}
+.memo{display:none;background:#fff7ed;border-left:5px solid #f97316;padding:12px;border-radius:10px;margin-top:8px}
+.small{font-size:14px;color:#52605a}
+.test-score{font-size:22px;font-weight:bold;text-align:center}
+label{display:block;font-weight:bold;margin-bottom:5px}
+
+.circle-diagram{background:#f8fffa;border:1px solid #d1fae5;border-radius:14px;padding:12px;margin:14px 0;text-align:center;overflow:hidden}
+.circle-diagram svg{width:100%;max-width:520px;height:auto;display:block;margin:auto}
+
+.circle-diagram svg{width:100%;max-width:500px;height:auto;display:block;margin:auto}
+
+.quick-choice{background:#e5e7eb;color:#17351f}
+.quick-choice:hover{background:#d1d5db}
+</style>
+
+</head>
+<body>
+</div>
+</div>
+
+<div class="container">
+
+<div class="hero">
+<div>BUDA BLOOM MATHS RESCUE</div>
+<h1>Chapter 10: CIRCLE</h1>
+<div class="subtitle">Understand it first. Then calculate it.</div>
+</div>
+
+<div class="card">
+<h2>🎯 What you will learn</h2>
+<p>By the end of this chapter you should be able to:</p>
+<ul>
+<li>Identify the important parts of a circle.</li>
+<li>Understand the difference between radius and diameter.</li>
+<li>Calculate the circumference of a circle.</li>
+<li>Calculate the area of a circle.</li>
+<li>Find a missing radius or diameter.</li>
+<li>Solve circle word problems.</li>
+</ul>
+<div class="goal"><b>Important:</b> Do not rush to calculate. First understand what the question is asking.</div>
+</div>
+
+<div class="card">
+<h2>1. What is a circle?</h2>
+<p>A <b>circle</b> is a round shape where every point on the edge is the same distance from the centre.</p>
+<div class="example"><b>Think of it:</b> A bicycle wheel, a coin and a round plate are examples of circular objects.</div>
+</div>
+
+
+<div class="example"><b>📝 Practical Question:</b> A bicycle wheel is circular and has a radius of 4 cm. What is its diameter?
+<input type="number" id="t1q1">
+<button type="button" data-buda-check="t1q1">Check</button><div id="t1f1" class="feedback"></div></div>
+<div class="card">
+<h2>2. Parts of a circle</h2>
+
+<div class="circle-diagram">
+<svg viewBox="0 0 520 330" role="img" aria-label="Clearly labelled circle showing centre, radius and diameter">
+  <circle cx="260" cy="155" r="105" fill="#effdf4" stroke="#166534" stroke-width="5"/>
+  <circle cx="260" cy="155" r="7" fill="#166534"/>
+  <!-- diameter -->
+  <line x1="155" y1="155" x2="365" y2="155" stroke="#dc2626" stroke-width="6"/>
+  <text x="260" y="142" text-anchor="middle" font-size="19" font-weight="bold" fill="#b91c1c">DIAMETER (d)</text>
+  <!-- radius -->
+  <line x1="260" y1="155" x2="334" y2="91" stroke="#2563eb" stroke-width="6"/>
+  <text x="388" y="83" text-anchor="middle" font-size="18" font-weight="bold" fill="#1d4ed8">RADIUS (r)</text>
+  <line x1="350" y1="88" x2="334" y2="91" stroke="#1d4ed8" stroke-width="2"/>
+  <!-- centre label -->
+  <line x1="260" y1="155" x2="220" y2="205" stroke="#166534" stroke-width="2"/>
+  <text x="170" y="220" text-anchor="middle" font-size="18" font-weight="bold" fill="#166534">CENTRE</text>
+  <text x="260" y="292" text-anchor="middle" font-size="17" fill="#17351f">Diameter = 2 × radius</text>
+</svg>
+</div>
+
+
+
+<div class="circle-diagram">
+<svg viewBox="0 0 520 300" role="img" aria-label="Clearly labelled chord">
+  <circle cx="260" cy="140" r="100" fill="#effdf4" stroke="#166534" stroke-width="5"/>
+  <line x1="190" y1="72" x2="330" y2="72" stroke="#7c3aed" stroke-width="7"/>
+  <line x1="260" y1="140" x2="260" y2="72" stroke="#94a3b8" stroke-width="3" stroke-dasharray="7 6"/>
+  <text x="260" y="54" text-anchor="middle" font-size="20" font-weight="bold" fill="#6d28d9">CHORD</text>
+  <text x="260" y="270" text-anchor="middle" font-size="17" fill="#17351f">A chord joins two points on the circle.</text>
+</svg>
+</div>
+
+
+<h3>Centre</h3><p>The centre is the exact middle of the circle.</p>
+<h3>Radius (r)</h3><p>The radius is the distance from the centre to the edge of the circle.</p>
+<h3>Diameter (d)</h3><p>The diameter goes from one side of the circle to the other side <b>through the centre</b>.</p>
+<h3>Circumference</h3><p>The circumference is the distance all the way around the circle.</p>
+<h3>Chord</h3><p>A chord is a straight line joining two points on the circle. It does not have to pass through the centre.</p>
+</div>
+
+
+<div class="example"><b>📝 Practical Question:</b> A round plate has a diameter of 20 cm. What is the distance from the centre to the edge?
+<input type="number" id="t2q1">
+<button type="button" data-buda-check="t2q1">Check</button><div id="t2f1" class="feedback"></div></div>
+<div class="card">
+<h2>🔑 Know Your Circle Letters</h2>
+<p>Before we use a formula, you must know what each letter means.</p>
+<div class="rule">
+<p><b>r = radius</b><br>The distance from the <b>centre to the edge</b> of the circle.</p>
+<p><b>d = diameter</b><br>The distance <b>from one side to the other side through the centre</b>.</p>
+<p><b>C = circumference</b><br>The distance <b>all the way around</b> the circle.</p>
+<p><b>A = area</b><br>The space <b>inside</b> the circle.</p>
+<p><b>π = pi</b><br>In this chapter, use <b>π = 3.14</b>.</p>
+</div>
+<div class="goal"><b>Remember:</b><br>
+<b>r</b> → radius<br>
+<b>d</b> → diameter<br>
+<b>C</b> → circumference<br>
+<b>A</b> → area</div>
+</div>
+
+<div class="card">
+<h2>3. Radius and diameter</h2>
+
+<div class="circle-diagram">
+<svg viewBox="0 0 520 330" role="img" aria-label="Clearly labelled circle showing centre, radius and diameter">
+  <circle cx="260" cy="155" r="105" fill="#effdf4" stroke="#166534" stroke-width="5"/>
+  <circle cx="260" cy="155" r="7" fill="#166534"/>
+  <!-- diameter -->
+  <line x1="155" y1="155" x2="365" y2="155" stroke="#dc2626" stroke-width="6"/>
+  <text x="260" y="142" text-anchor="middle" font-size="19" font-weight="bold" fill="#b91c1c">DIAMETER (d)</text>
+  <!-- radius -->
+  <line x1="260" y1="155" x2="334" y2="91" stroke="#2563eb" stroke-width="6"/>
+  <text x="388" y="83" text-anchor="middle" font-size="18" font-weight="bold" fill="#1d4ed8">RADIUS (r)</text>
+  <line x1="350" y1="88" x2="334" y2="91" stroke="#1d4ed8" stroke-width="2"/>
+  <!-- centre label -->
+  <line x1="260" y1="155" x2="220" y2="205" stroke="#166534" stroke-width="2"/>
+  <text x="170" y="220" text-anchor="middle" font-size="18" font-weight="bold" fill="#166534">CENTRE</text>
+  <text x="260" y="292" text-anchor="middle" font-size="17" fill="#17351f">Diameter = 2 × radius</text>
+</svg>
+</div>
+
+
+<div class="rule"><b>The diameter is always twice the radius.</b></div>
+<div class="formula"><b>DIAMETER (d)</b><br>d = 2r</div>
+<div class="formula"><b>RADIUS (r)</b><br>r = d ÷ 2</div>
+<div class="example">
+<b>Example:</b> Radius = 5 cm<br>
+<div class="step">Step 1: We need the diameter.</div>
+<div class="step">Step 2: d = 2r</div>
+<div class="step">Step 3: d = 2 × 5</div>
+<div class="step">Answer: <b>10 cm</b></div>
+</div>
+</div>
+
+
+<div class="example"><b>📝 Practical Question:</b> A circular garden has a radius of 6 m. What is its diameter?
+<input type="number" id="t3q1">
+<button type="button" data-buda-check="t3q1">Check</button><div id="t3f1" class="feedback"></div></div>
+<div class="card">
+<h2>4. Understanding π (pi)</h2>
+<p><b>π</b> is a special number used when working with circles.</p>
+<div class="formula">π ≈ 3.14</div>
+<div class="example">
+<b>Where did 3.14 come from?</b><br>
+π (pi) is a special number that starts:
+<b>3.14159265...</b><br><br>
+We usually write <b>3.14</b> because 3.14159265... rounded to <b>2 decimal places</b> is <b>3.14</b>.<br><br>
+So, in this chapter, when we use π, we use <b>3.14</b>.<br><br>
+<b>Where does 22/7 come in?</b><br>
+π can also be approximated by the fraction <b>22/7</b>.<br>
+You can see why it is close to 3.14 by dividing:<br>
+<div class="formula"><b>22 ÷ 7 ≈ 3.142857...</b></div>
+When rounded to 2 decimal places, <b>3.142857... → 3.14</b>.<br>
+So <b>22/7</b> is a useful way to work with π <b>without a calculator</b>.
+</div>
+<p>Unless the question tells you to use another value, use <b>3.14</b> in this chapter.</p>
+</div>
+
+
+<div class="example"><b>📝 Practical Question:</b> When measuring a circular object for a calculation, this chapter tells you to use π = ?
+<input type="number" id="t4q1">
+<button type="button" data-buda-check="t4q1">Check</button><div id="t4f1" class="feedback"></div></div>
+<div class="card">
+<h2>5. Circumference</h2>
+
+<div class="circle-diagram">
+<svg viewBox="0 0 520 300" role="img" aria-label="Circle with radius of 4 centimetres">
+  <circle cx="260" cy="135" r="90" fill="#effdf4" stroke="#166534" stroke-width="5"/>
+  <circle cx="260" cy="135" r="7" fill="#166534"/>
+  <line x1="260" y1="135" x2="350" y2="135" stroke="#2563eb" stroke-width="7"/>
+  <text x="260" y="118" text-anchor="middle" font-size="18" font-weight="bold" fill="#166534">CENTRE</text>
+  <text x="305" y="116" text-anchor="middle" font-size="19" font-weight="bold" fill="#1d4ed8">4 cm</text>
+  <text x="260" y="265" text-anchor="middle" font-size="18" fill="#17351f">The radius is 4 cm</text>
+</svg>
+</div>
+
+
+<p>Circumference means the distance <b>around</b> the circle.</p>
+<div class="formula"><b>CIRCUMFERENCE (C)</b><br>C = 2πr</div>
+<p>Or, if the diameter is given:</p>
+<div class="formula"><b>CIRCUMFERENCE (C)</b><br>C = πd</div>
+<div class="example">
+<b>Example:</b> A circle has radius 4 cm. Find its circumference.<br>
+<div class="step">Step 1: Identify the radius: r = 4 cm.</div>
+<div class="step">Step 2: Use C = 2πr.</div>
+<div class="step">Step 3: C = 2 × 3.14 × 4.</div>
+<div class="step">Step 4: C = 25.12.</div>
+<div class="step">Answer: <b>25.12 cm</b></div>
+</div>
+</div>
+
+
+<div class="example"><b>📝 Practical Question:</b> A round table has a radius of 3 m. How far is it around the table? Use π = 3.14.
+<input type="number" id="t5q1">
+<button type="button" data-buda-check="t5q1">Check</button><div id="t5f1" class="feedback"></div></div>
+<div class="card">
+<h2>6. Area of a circle</h2>
+
+<div class="circle-diagram">
+<svg viewBox="0 0 520 300" role="img" aria-label="Circle with radius of 5 centimetres for area">
+  <circle cx="260" cy="135" r="90" fill="#dcfce7" stroke="#166534" stroke-width="5"/>
+  <circle cx="260" cy="135" r="7" fill="#166534"/>
+  <line x1="260" y1="135" x2="350" y2="135" stroke="#2563eb" stroke-width="7"/>
+  <text x="260" y="110" text-anchor="middle" font-size="18" font-weight="bold" fill="#166534">CENTRE</text>
+  <text x="305" y="116" text-anchor="middle" font-size="19" font-weight="bold" fill="#1d4ed8">5 cm</text>
+  <text x="260" y="265" text-anchor="middle" font-size="18" fill="#17351f">Radius = 5 cm</text>
+</svg>
+</div>
+
+
+<p>Area means the amount of space <b>inside</b> the circle.</p>
+<div class="formula"><b>AREA (A)</b><br>A = πr²</div>
+<p>Remember: <b>r² means r × r</b>.</p>
+<div class="example">
+<b>Example:</b> Radius = 5 cm. Find the area.<br>
+<div class="step">Step 1: A = πr²</div>
+<div class="step">Step 2: A = 3.14 × 5²</div>
+<div class="step">Step 3: 5² = 5 × 5 = 25</div>
+<div class="step">Step 4: A = 3.14 × 25</div>
+<div class="step">Answer: <b>78.5 cm²</b></div>
+</div>
+</div>
+
+
+<div class="example"><b>📝 Practical Question:</b> A circular flower bed has a radius of 4 m. What is the area inside it? Use π = 3.14.
+<input type="number" id="t6q1">
+<button type="button" data-buda-check="t6q1">Check</button><div id="t6f1" class="feedback"></div></div>
+<div class="card">
+<h2>7. How do I know which formula to use?</h2>
+<div class="rule">
+<b>Question says around the circle?</b> → Circumference<br>
+<b>Question says inside the circle?</b> → Area<br>
+<b>Question gives diameter but needs radius?</b> → Divide by 2<br>
+<b>Question gives radius but needs diameter?</b> → Multiply by 2
+</div>
+</div>
+
+
+<div class="example"><b>📝 Practical Question:</b> A gardener wants to know how much space is inside a circular flower bed. The radius is 5 m. What is the area? Use π = 3.14.
+<input type="number" id="t7q1">
+<button type="button" data-buda-check="t7q1">Check</button><div id="t7f1" class="feedback"></div></div>
+<div class="card">
+<h2>8. Practice</h2>
+
+<div class="question">
+<b>1.</b> A circle has a radius of 7 cm. What is its diameter?
+<input type="number" id="p1">
+<button type="button" data-buda-check="p1">Check</button><div id="f1" class="feedback"></div>
+</div>
+
+<div class="question">
+<b>2.</b> A circle has a diameter of 18 cm. What is its radius?
+<input type="number" id="p2">
+<button type="button" data-buda-check="p2">Check</button><div id="f2" class="feedback"></div>
+</div>
+
+<div class="question">
+<b>3.</b> Find the circumference of a circle with radius 6 cm. Use π = 3.14.
+<input type="number" id="p3">
+<button type="button" data-buda-check="p3">Check</button><div id="f3" class="feedback"></div>
+</div>
+
+<div class="question">
+<b>4.</b> Find the area of a circle with radius 3 cm. Use π = 3.14.
+<input type="number" id="p4">
+<button type="button" data-buda-check="p4">Check</button><div id="f4" class="feedback"></div>
+</div>
+</div>
+
+
+<div class="card">
+<h2>📝 Practical Questions — Every Topic</h2>
+<p>Try these practical questions to make sure you can use every skill in this chapter.</p>
+
+<div class="question">
+<b>1. Parts of a circle:</b> A straight line joins two points on the edge of a round table but does not pass through the centre. What is this line called?<br>
+<label><input type="radio" name="pt1" value="yes"> Chord</label>
+<label><input type="radio" name="pt1" value="no"> Diameter</label>
+<button onclick="topicChoice('pt1','pf1','A chord joins two points on the circle and does not have to pass through the centre.')">Check</button>
+<div id="pf1" class="feedback"></div>
+</div>
+
+<div class="question">
+<b>2. Radius and diameter:</b> A bicycle wheel has a radius of 12 cm. What is its diameter?<br>
+<input type="number" id="pt2">
+<button type="button" data-buda-check="pt2">Check</button><div id="pf2" class="feedback"></div>
+</div>
+
+<div class="question">
+<b>3. Understanding π:</b> In this chapter, which value of π should you use?<br>
+<input type="number" id="pt3">
+<button type="button" data-buda-check="pt3">Check</button><div id="pf3" class="feedback"></div>
+</div>
+
+<div class="question">
+<b>4. Circumference:</b> A round garden has a radius of 10 m. Find the distance around the garden. Use π = 3.14.<br>
+<input type="number" id="pt4">
+<button type="button" data-buda-check="pt4">Check</button><div id="pf4" class="feedback"></div>
+</div>
+
+<div class="question">
+<b>5. Area:</b> A round table has a radius of 6 cm. Find the space inside the table. Use π = 3.14.<br>
+<input type="number" id="pt5">
+<button type="button" data-buda-check="pt5">Check</button><div id="pf5" class="feedback"></div>
+</div>
+
+<div class="question">
+<b>6. Choosing the correct formula:</b> You are measuring the distance all the way around a circular swimming pool. Which formula should you use?<br>
+<label><input type="radio" name="pt6" value="yes"> C = 2πr</label>
+<label><input type="radio" name="pt6" value="no"> A = πr²</label>
+<button onclick="topicChoice('pt6','pf6','The distance around a circle is circumference, so C = 2πr when the radius is given.')">Check</button>
+<div id="pf6" class="feedback"></div>
+</div>
+
+<div class="question">
+<b>7. Circle word problem:</b> A pizza has a diameter of 20 cm. Find the distance around the pizza. Use π = 3.14.<br>
+<input type="number" id="pt7">
+<button type="button" data-buda-check="pt7">Check</button><div id="pf7" class="feedback"></div>
+</div>
+</div>
+
+<div class="card">
+<h2>9. Quick understanding check</h2>
+<p><b>Which one means the distance around a circle?</b></p>
+<button class="secondary quick-choice" onclick="mc('m1',true)">Circumference</button>
+<button class="secondary quick-choice" onclick="mc('m1',false)">Area</button>
+<div id="m1" class="feedback"></div>
+
+<p><b>If the radius is 8 cm, what is the diameter?</b></p>
+<button class="secondary quick-choice" onclick="mc('m2',false)">8 cm</button>
+<button class="secondary quick-choice" onclick="mc('m2',true)">16 cm</button>
+<div id="m2" class="feedback"></div>
+</div>
+
+
+<div class="card">
+<h2>⭐ Before the Test: Learn These Two Types</h2>
+<p>These questions may look new, but they use the rules you have already learned. Let’s practise them slowly first.</p>
+
+<h3>Type 1: Finding the area</h3>
+<div class="example">
+<b>Example:</b> A circle has a radius of 4 cm. Find its area.
+<div class="step"><b>Step 1:</b> We are finding the space <b>inside</b> the circle, so we need area.</div>
+<div class="step"><b>Step 2:</b> Use the formula: <b>A = πr²</b></div>
+<div class="step"><b>Step 3:</b> Put in the radius: <b>A = 3.14 × 4²</b></div>
+<div class="step"><b>Step 4:</b> 4² means 4 × 4 = <b>16</b>.</div>
+<div class="step"><b>Step 5:</b> A = 3.14 × 16.</div>
+<div class="step"><b>Answer:</b> <b>50.24 cm²</b></div>
+</div>
+
+<h3>Type 2: Finding the radius when the diameter is given</h3>
+<div class="example">
+<b>Example:</b> A circle has a diameter of 14 cm. Find its radius.
+<div class="step"><b>Step 1:</b> Remember: the diameter is <b>twice</b> the radius.</div>
+<div class="step"><b>Step 2:</b> To find the radius, divide the diameter by 2.</div>
+<div class="step"><b>Step 3:</b> Radius = 14 ÷ 2.</div>
+<div class="step"><b>Answer:</b> <b>7 cm</b></div>
+</div>
+
+<div class="goal"><b>Easy memory rule:</b><br>
+Area → inside → <b>A = πr²</b><br>
+Diameter → radius → <b>divide by 2</b>
+</div>
+</div>
+
+<div class="card">
+<h2>10. Final Chapter Test</h2>
+<p class="small">12 questions. Pass mark = 8/12. Use π = 3.14. Try the questions before checking the result.</p>
+
+<div id="test">
+<div class="question">1. Radius = 6 cm. Diameter = ?<input type="number" data-answer="12"></div>
+<div class="question">2. Diameter = 20 cm. Radius = ?<input type="number" data-answer="10"></div>
+<div class="question">3. Which formula finds circumference using radius?<br>
+<label><input type="radio" name="q3" value="yes"> C = 2πr</label>
+<label><input type="radio" name="q3" value="no"> A = πr²</label></div>
+<div class="question">4. Which formula finds area?<br>
+<label><input type="radio" name="q4" value="yes"> A = πr²</label>
+<label><input type="radio" name="q4" value="no"> C = πd</label></div>
+<div class="question">5. Circumference of radius 5 cm = ?<input type="number" data-answer="31.4"></div>
+<div class="question">6. Area of radius 4 cm = ?<input type="number" data-answer="50.24"></div>
+<div class="question">7. A diameter is 14 cm. Radius = ?<input type="number" data-answer="7"></div>
+<div class="question">8. Circumference of diameter 10 cm = ?<input type="number" data-answer="31.4"></div>
+<div class="question">9. Area means the space ______ the circle.<br>
+<label><input type="radio" name="q9" value="yes"> inside</label>
+<label><input type="radio" name="q9" value="no"> around</label></div>
+<div class="question">10. Circumference means the distance ______ the circle.<br>
+<label><input type="radio" name="q10" value="yes"> around</label>
+<label><input type="radio" name="q10" value="no"> inside</label></div>
+<div class="question">11. A circle has radius 8 cm. Find its circumference.<input type="number" data-answer="50.24"></div>
+<div class="question">12. A circle has radius 10 cm. Find its area.<input type="number" data-answer="314"></div>
+</div>
+<button onclick="submitTest()">SUBMIT TEST</button>
+<div id="score" class="test-score"></div>
+<div id="testMemo"></div>
+</div>
+
+<div class="card">
+<h2>🎉 Chapter 10 Complete</h2>
+<p>You have learned the main circle skills needed for this chapter:</p>
+<ul>
+<li>Parts of a circle</li>
+<li>Radius and diameter</li>
+<li>Circumference</li>
+<li>Area</li>
+<li>Circle problem solving</li>
+</ul>
+<div class="goal"><b>Remember:</b> Around = circumference. Inside = area. Diameter = 2 × radius.</div>
+</div>
+
+</div>
+
+<script>
+function check(id,ans,fid,steps){
+ let v=parseFloat(document.getElementById(id).value);
+ let f=document.getElementById(fid);
+ f.style.display='block';
+ if(!isNaN(v) && Math.abs(v-ans)<0.001){
+   f.className='feedback correct';
+   f.innerHTML='✅ <b>Correct!</b><br><br><b>How did we get the answer?</b><br>'+steps;
+ } else {
+   f.className='feedback wrong';
+   f.innerHTML='❌ <b>Not quite.</b><br><br><b>Let’s work it out step by step:</b><br>'+steps;
+ }
+}
+function mc(id,ok){
+ let f=document.getElementById(id);f.style.display='block';
+ if(ok){
+   f.className='feedback correct';
+   f.innerHTML='✅ <b>Correct!</b><br><br><b>Why?</b><br>' +
+     (id==='m1' ? 'Circumference is the distance <b>around</b> the circle.' : 'The diameter is twice the radius: 2 × 8 = <b>16 cm</b>.');
+ } else {
+   f.className='feedback wrong';
+   f.innerHTML='❌ <b>Not quite.</b><br><br><b>Step-by-step:</b><br>' +
+     (id==='m1' ? 'The distance <b>around</b> a circle is called circumference.' : 'Diameter = 2 × radius = 2 × 8 = <b>16 cm</b>.');
+ }
+}
+function topicChoice(name,fid,why){
+ let selected=document.querySelector('input[name="'+name+'"]:checked');
+ let f=document.getElementById(fid);
+ f.style.display='block';
+ if(selected && selected.value==='yes'){
+  f.className='feedback correct';
+  f.innerHTML='✅ <b>Correct!</b><br><br><b>Why?</b><br>'+why;
+ } else {
+  f.className='feedback wrong';
+  f.innerHTML='❌ <b>Not quite.</b><br><br><b>Remember:</b><br>'+why;
+ }
+}
+
+function valNum(x){return parseFloat(x.value)}
+function submitTest(){
+ const questions=[
+  {type:'num',answer:12,work:'Step 1: Radius = 6 cm.<br>Step 2: Diameter = 2 × radius.<br>Step 3: Diameter = 2 × 6.<br>Step 4: <b>Diameter = 12 cm</b>.'},
+  {type:'num',answer:10,work:'Step 1: Diameter = 20 cm.<br>Step 2: Radius = diameter ÷ 2.<br>Step 3: Radius = 20 ÷ 2.<br>Step 4: <b>Radius = 10 cm</b>.'},
+  {type:'radio',name:'q3',answer:'yes',work:'Step 1: The question asks for circumference and gives the radius.<br>Step 2: Use <b>C = 2πr</b>.'},
+  {type:'radio',name:'q4',answer:'yes',work:'Step 1: The question asks for area.<br>Step 2: Area means the space inside the circle.<br>Step 3: Use <b>A = πr²</b>.'},
+  {type:'num',answer:31.4,work:'Step 1: Radius = 5 cm.<br>Step 2: Use C = 2πr.<br>Step 3: C = 2 × 3.14 × 5.<br>Step 4: C = 6.28 × 5.<br>Step 5: <b>C = 31.4 cm</b>.'},
+  {type:'num',answer:50.24,work:'Step 1: Radius = 4 cm.<br>Step 2: Use A = πr².<br>Step 3: A = 3.14 × 4².<br>Step 4: 4² = 4 × 4 = 16.<br>Step 5: A = 3.14 × 16.<br>Step 6: <b>A = 50.24 cm²</b>.'},
+  {type:'num',answer:7,work:'Step 1: Diameter = 14 cm.<br>Step 2: Radius = diameter ÷ 2.<br>Step 3: Radius = 14 ÷ 2.<br>Step 4: <b>Radius = 7 cm</b>.'},
+  {type:'num',answer:31.4,work:'Step 1: Diameter = 10 cm.<br>Step 2: Use C = πd.<br>Step 3: C = 3.14 × 10.<br>Step 4: <b>C = 31.4 cm</b>.'},
+  {type:'radio',name:'q9',answer:'yes',work:'Step 1: Area describes the space <b>inside</b> the circle.'},
+  {type:'radio',name:'q10',answer:'yes',work:'Step 1: Circumference describes the distance <b>around</b> the circle.'},
+  {type:'num',answer:50.24,work:'Step 1: Radius = 8 cm.<br>Step 2: Use C = 2πr.<br>Step 3: C = 2 × 3.14 × 8.<br>Step 4: C = 6.28 × 8.<br>Step 5: <b>C = 50.24 cm</b>.'},
+  {type:'num',answer:314,work:'Step 1: Radius = 10 cm.<br>Step 2: Use A = πr².<br>Step 3: A = 3.14 × 10².<br>Step 4: 10² = 100.<br>Step 5: A = 3.14 × 100.<br>Step 6: <b>A = 314 cm²</b>.'}
+ ];
+
+ let score=0;
+ let numIndex=0;
+ let memo=[];
+
+ questions.forEach((q,i)=>{
+   let correct=false;
+   if(q.type==='num'){
+     const inputs=document.querySelectorAll('#test input[data-answer]');
+     const x=inputs[numIndex++];
+     const v=parseFloat(x.value);
+     correct=!isNaN(v) && Math.abs(v-q.answer)<0.001;
+   }else{
+     const s=document.querySelector('input[name="'+q.name+'"]:checked');
+     correct=!!s && s.value===q.answer;
+   }
+
+   if(correct) score++;
+
+   memo.push(
+     '<div class="memo" style="display:block">' +
+     '<b>Question '+(i+1)+': '+(correct?'✅ Correct':'❌ Review')+'</b><br><br>' +
+     '<b>Step-by-step working:</b><br>'+q.work+
+     '</div>'
+   );
+ });
+
+ const sc=document.getElementById('score');
+ sc.innerHTML=score>=8?'🎉 PASS — '+score+'/12':'❌ FAIL — '+score+'/12';
+
+ document.getElementById('testMemo').innerHTML=
+   '<h3>Full Step-by-Step Memo</h3>' +
+   '<p><b>Maths is about working, not just the final answer.</b> Every question below shows how the answer is calculated or identified — even when you got it correct.</p>' +
+   memo.join('');
+}
+</script>
+
+
+<script>
+/* BudaBloom button repair: keeps the existing check function and only reconnects Check buttons. */
+document.addEventListener('DOMContentLoaded', function(){
+  const checkData = {"t1q1": {"answer": 8.0, "feedback": "t1f1", "steps": "Step 1: The radius is 4 cm.<br>Step 2: Diameter = 2 × radius.<br>Step 3: Diameter = 2 × 4.<br>Answer: <b>8 cm</b>."}, "t2q1": {"answer": 10.0, "feedback": "t2f1", "steps": "Step 1: The diameter is 20 cm.<br>Step 2: Radius = diameter ÷ 2.<br>Step 3: Radius = 20 ÷ 2.<br>Answer: <b>10 cm</b>."}, "t3q1": {"answer": 12.0, "feedback": "t3f1", "steps": "Step 1: Radius = 6 m.<br>Step 2: Diameter = 2 × radius.<br>Step 3: Diameter = 2 × 6.<br>Answer: <b>12 m</b>."}, "t4q1": {"answer": 3.14, "feedback": "t4f1", "steps": "Step 1: The chapter tells us to use π = 3.14.<br>Answer: <b>3.14</b>."}, "t5q1": {"answer": 18.84, "feedback": "t5f1", "steps": "Step 1: We need the distance around, so find circumference.<br>Step 2: C = 2πr.<br>Step 3: C = 2 × 3.14 × 3.<br>Step 4: C = <b>18.84 m</b>."}, "t6q1": {"answer": 50.24, "feedback": "t6f1", "steps": "Step 1: We need the space inside, so find area.<br>Step 2: A = πr².<br>Step 3: A = 3.14 × 4².<br>Step 4: 4² = 16.<br>Step 5: A = 3.14 × 16 = <b>50.24 m²</b>."}, "t7q1": {"answer": 78.5, "feedback": "t7f1", "steps": "Step 1: The question asks for the space inside, so use area.<br>Step 2: A = πr².<br>Step 3: A = 3.14 × 5².<br>Step 4: 5² = 25.<br>Step 5: A = <b>78.5 m²</b>."}, "p1": {"answer": 14.0, "feedback": "f1", "steps": "Step 1: The radius is 7 cm.<br>Step 2: Diameter = 2 × radius.<br>Step 3: Diameter = 2 × 7.<br>Step 4: Diameter = <b>14 cm</b>."}, "p2": {"answer": 9.0, "feedback": "f2", "steps": "Step 1: The diameter is 18 cm.<br>Step 2: Radius = diameter ÷ 2.<br>Step 3: Radius = 18 ÷ 2.<br>Step 4: Radius = <b>9 cm</b>."}, "p3": {"answer": 37.68, "feedback": "f3", "steps": "Step 1: Radius = 6 cm.<br>Step 2: Use C = 2πr.<br>Step 3: C = 2 × 3.14 × 6.<br>Step 4: C = 6.28 × 6.<br>Step 5: C = <b>37.68 cm</b>."}, "p4": {"answer": 28.26, "feedback": "f4", "steps": "Step 1: Radius = 3 cm.<br>Step 2: Use A = πr².<br>Step 3: A = 3.14 × 3².<br>Step 4: 3² = 3 × 3 = 9.<br>Step 5: A = 3.14 × 9 = <b>28.26 cm²</b>."}, "pt2": {"answer": 24.0, "feedback": "pf2", "steps": "Step 1: Radius = 12 cm.<br>Step 2: Diameter = 2 × radius.<br>Step 3: Diameter = 2 × 12.<br>Step 4: <b>Diameter = 24 cm</b>."}, "pt3": {"answer": 3.14, "feedback": "pf3", "steps": "Step 1: This chapter tells us to use π = 3.14.<br>Step 2: Therefore, <b>π = 3.14</b>."}, "pt4": {"answer": 62.8, "feedback": "pf4", "steps": "Step 1: Radius = 10 m.<br>Step 2: Distance around means circumference.<br>Step 3: C = 2πr.<br>Step 4: C = 2 × 3.14 × 10.<br>Step 5: <b>C = 62.8 m</b>."}, "pt5": {"answer": 113.04, "feedback": "pf5", "steps": "Step 1: Radius = 6 cm.<br>Step 2: Space inside means area.<br>Step 3: A = πr².<br>Step 4: A = 3.14 × 6².<br>Step 5: 6² = 36.<br>Step 6: A = 3.14 × 36 = <b>113.04 cm²</b>."}, "pt7": {"answer": 62.8, "feedback": "pf7", "steps": "Step 1: Diameter = 20 cm.<br>Step 2: Distance around means circumference.<br>Step 3: Use C = πd.<br>Step 4: C = 3.14 × 20.<br>Step 5: <b>C = 62.8 cm</b>."}};
+  document.querySelectorAll('button[data-buda-check]').forEach(function(button){
+    button.addEventListener('click', function(){
+      const id = button.getAttribute('data-buda-check');
+      const item = checkData[id];
+      if(item) check(id, item.answer, item.feedback, item.steps);
+    });
+  });
+});
+</script>
+
+</body>
+</html>
