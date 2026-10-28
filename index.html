@@ -2,145 +2,100 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>BudaBloom Maths Rescue — Grade 9</title>
 <style>
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f8f4;
-  color: #183b25;
-}
-.wrap {
-  max-width: 900px;
-  margin: auto;
-  padding: 22px 16px 40px;
-}
-.hero {
-  background: linear-gradient(135deg, #dff2df, #fff4bd);
-  border-radius: 20px;
-  padding: 28px 20px;
-  text-align: center;
-  margin-bottom: 22px;
-}
-.hero h1 {
-  margin: 0 0 8px;
-  font-size: 30px;
-}
-.hero h2 {
-  margin: 0 0 12px;
-  font-size: 21px;
-}
-.hero p {
-  margin: 7px 0;
-  line-height: 1.5;
-}
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 14px;
-}
-.card {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  background: white;
-  border: 1px solid #d7e5d8;
-  border-radius: 16px;
-  padding: 19px;
-  box-shadow: 0 3px 10px rgba(0,0,0,.06);
-}
-.card:active { transform: scale(.99); }
-.chapter {
-  font-weight: bold;
-  font-size: 15px;
-  margin-bottom: 7px;
-}
-.title {
-  font-size: 19px;
-  font-weight: bold;
-  min-height: 48px;
-}
-.open {
-  margin-top: 14px;
-  font-size: 13px;
-  font-weight: bold;
-  color: #387a45;
-}
-.footer {
-  text-align: center;
-  margin-top: 24px;
-  font-size: 13px;
-  color: #55705b;
-}
+*{box-sizing:border-box}
+body{margin:0;background:#f3faf6;color:#173d2b;font-family:Arial,sans-serif}
+.wrap{max-width:760px;margin:auto;padding:16px}
+.card{background:#fff;border-radius:20px;padding:22px;margin:16px 0;box-shadow:0 4px 18px #0001}
+.hero{background:linear-gradient(135deg,#e9f8ed,#fff8cc);text-align:center}
+h1{font-size:30px;margin:8px 0;color:#08783f}
+h2{color:#08783f}
+.gold{color:#a87500;font-weight:800;font-size:19px}
+input{width:100%;padding:14px;border:2px solid #b8cbbd;border-radius:11px;font-size:18px;text-transform:uppercase}
+button{width:100%;padding:14px;border:0;border-radius:11px;background:#08783f;color:#fff;font-size:18px;font-weight:bold;margin-top:10px}
+.msg{margin-top:12px;padding:12px;border-radius:10px;display:none}
+.error{background:#ffe9e9;color:#a32121}
+.success{background:#e8f7ec;color:#146b32}
+#chapters{display:none}
+.chapter{display:block;text-decoration:none;color:#173d2b;background:#f8fcf9;border:1px solid #dbe8de;border-radius:16px;padding:18px;margin:12px 0}
+.chapter-name{font-size:15px;font-weight:bold;color:#08783f}
+.chapter-title{font-size:21px;font-weight:bold;margin:6px 0 12px}
+.open{display:inline-block;background:#08783f;color:#fff;border-radius:9px;padding:11px 15px;font-weight:bold}
+.small{font-size:14px;color:#5d7165;line-height:1.5}
+.lock{font-size:28px}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <section class="hero">
-    <h1>BudaBloom Maths Rescue</h1>
-    <h2>Grade 9 Maths</h2>
-    <p><strong>See it. Understand it. Solve it.</strong></p>
-    <p>Choose the chapter you need and start learning.</p>
-  </section>
 
-  <section class="grid">
-      <a class="card" href="BudaBloom_Chapter_1_GITHUB_NO_CODE_WORKING.html">
-        <div class="chapter">Chapter 1</div>
-        <div class="title">Proportion</div>
-        <div class="open">OPEN CHAPTER →</div>
-      </a>
-      <a class="card" href="BudaBloom_Chapter_2_GITHUB_NO_CODE_WITH_APPROVED_INTRO_CHAPTER_NAME.html">
-        <div class="chapter">Chapter 2</div>
-        <div class="title">Algebraic Expressions</div>
-        <div class="open">OPEN CHAPTER →</div>
-      </a>
-      <a class="card" href="BudaBloom_Chapter_3_GITHUB_NO_CODE.html">
-        <div class="chapter">Chapter 3</div>
-        <div class="title">Like & Unlike Terms</div>
-        <div class="open">OPEN CHAPTER →</div>
-      </a>
-      <a class="card" href="BudaBloom_Chapter_4_GITHUB_NO_CODE.html">
-        <div class="chapter">Chapter 4</div>
-        <div class="title">Like Terms</div>
-        <div class="open">OPEN CHAPTER →</div>
-      </a>
-      <a class="card" href="BudaBloom_Chapter_5_GITHUB_NO_CODE.html">
-        <div class="chapter">Chapter 5</div>
-        <div class="title">Multiplication of Algebraic Expressions</div>
-        <div class="open">OPEN CHAPTER →</div>
-      </a>
-      <a class="card" href="BudaBloom_Chapter_6_GITHUB_NO_CODE.html">
-        <div class="chapter">Chapter 6</div>
-        <div class="title">Solving Algebraic Equations</div>
-        <div class="open">OPEN CHAPTER →</div>
-      </a>
-      <a class="card" href="BudaBloom_Chapter_7_GITHUB_NO_CODE.html">
-        <div class="chapter">Chapter 7</div>
-        <div class="title">Geometry of Straight Lines and Angles</div>
-        <div class="open">OPEN CHAPTER →</div>
-      </a>
-      <a class="card" href="BudaBloom_Chapter_8_GITHUB_NO_CODE.html">
-        <div class="chapter">Chapter 8</div>
-        <div class="title">Parallel Lines</div>
-        <div class="open">OPEN CHAPTER →</div>
-      </a>
-      <a class="card" href="Chapter_9_GitHub_Ready.html">
-        <div class="chapter">Chapter 9</div>
-        <div class="title">Similar Triangles</div>
-        <div class="open">OPEN CHAPTER →</div>
-      </a>
-      <a class="card" href="BudaBloom_Chapter_10_GITHUB_READY_FINAL.html">
-        <div class="chapter">Chapter 10</div>
-        <div class="title">Circle</div>
-        <div class="open">OPEN CHAPTER →</div>
-      </a>
-  </section>
+<section class="card hero">
+  <div class="lock">🌱</div>
+  <h1>BudaBloom Maths Rescue</h1>
+  <h2>Grade 9 Maths</h2>
+  <p class="gold">See it. Understand it. Solve it.</p>
+  <p>Your purchased chapters are protected by <b>one activation code</b>.</p>
+</section>
 
-  <div class="footer">
-    BudaBloom Maths Rescue
+<section class="card" id="gate">
+  <h2>🔐 Enter your product code</h2>
+  <p>Enter the activation code supplied with your purchase.</p>
+  <input id="code" autocomplete="off" placeholder="Enter product code">
+  <button onclick="openProduct()">OPEN MY MATHS RESCUE</button>
+  <div id="error" class="msg error"></div>
+  <p class="small">One product code opens your purchased chapters. There is no second chapter code.</p>
+</section>
+
+<section id="chapters">
+  <div class="card success">
+    <h2>✅ Your Purchased Chapters</h2>
+    <p>Your product code has been accepted. Choose a chapter below.</p>
   </div>
+  
+  <a class="chapter" href="BudaBloom_Chapter_2_GITHUB_NO_CODE_WITH_APPROVED_INTRO_CHAPTER_NAME.html">
+    <div class="chapter-name">Chapter 2</div>
+    <div class="chapter-title">Algebraic Expressions</div>
+    <span class="open">OPEN CHAPTER →</span>
+  </a>
+  <a class="chapter" href="BudaBloom_Chapter_3_GITHUB_NO_CODE.html">
+    <div class="chapter-name">Chapter 3</div>
+    <div class="chapter-title">Like & Unlike Terms</div>
+    <span class="open">OPEN CHAPTER →</span>
+  </a>
+  <a class="chapter" href="Chapter_9_GitHub_Ready.html">
+    <div class="chapter-name">Chapter 9</div>
+    <div class="chapter-title">Similar Triangles</div>
+    <span class="open">OPEN CHAPTER →</span>
+  </a>
+  <a class="chapter" href="BudaBloom_Chapter_10_GITHUB_READY_FINAL.html">
+    <div class="chapter-name">Chapter 10</div>
+    <div class="chapter-title">Circle</div>
+    <span class="open">OPEN CHAPTER →</span>
+  </a>
+</section>
+
 </div>
+
+<script>
+const PRODUCT_CODE = "BB1-AUTO-446";
+
+function openProduct() {
+  const entered = document.getElementById("code").value.trim().toUpperCase();
+  const error = document.getElementById("error");
+
+  if (entered !== PRODUCT_CODE) {
+    error.textContent = "❌ Incorrect product code. Please enter the code supplied with your purchase.";
+    error.style.display = "block";
+    document.getElementById("chapters").style.display = "none";
+    return;
+  }
+
+  error.style.display = "none";
+  document.getElementById("gate").style.display = "none";
+  document.getElementById("chapters").style.display = "block";
+  window.scrollTo(0,0);
+}
+</script>
 </body>
 </html>
