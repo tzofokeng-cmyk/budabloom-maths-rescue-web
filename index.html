@@ -11,7 +11,6 @@
 const SUPABASE_URL='https://fftbbjufazylnlhcnida.supabase.co';
 const SUPABASE_KEY='sb_publishable_uuVBiqlBugutdZrFAmWzlA_mV6k8RTR';
 const REPO_API='https://api.github.com/repos/tzofokeng-cmyk/budabloom-maths-rescue-web/contents/';
-const FIXED_CHAPTER_1='BudaBloom_Chapter_1_GITHUB_NO_CODE_WORKING.html';
 const TITLES={1:'Direct & Indirect Proportion',2:'Algebraic Expressions',3:'Like & Unlike Terms',4:'Substitution',5:'Binomial Multiply by Binomial',6:'Solving Algebraic Expressions',7:'Geometry of Straight Lines & Angles',8:'Parallel Lines',9:'Similar Triangles',10:'Circle'};
 function deviceId(){let k='bb_web_device_id',v=localStorage.getItem(k);if(!v){v=crypto.randomUUID?crypto.randomUUID():'bb-'+Date.now()+'-'+Math.random().toString(36).slice(2);localStorage.setItem(k,v)}return v}
 async function activate(){
@@ -27,7 +26,7 @@ async function activate(){
   let rawChapters=data.purchased_chapters??data.chapters??data.chapter_numbers??data.purchasedChapters??[];
   if(typeof rawChapters==='string'){try{rawChapters=JSON.parse(rawChapters)}catch(e){rawChapters=rawChapters.split(',').map(x=>x.trim())}}
   const chapters=ok&&Array.isArray(rawChapters)?[...new Set(rawChapters.map(Number).filter(n=>TITLES[n]))].sort((a,b)=>a-b):[];
-  if(!ok||!chapters.length){f.className='feedback bad';f.textContent='❌ Invalid or inactive product code, or no purchased chapters were found.';return}
+  if(!ok||!chapters.length){f.className='feedback bad';f.textContent='❌ This product code has already been used on another device, or no purchased chapters were found.';return}
   document.getElementById('accessCard').classList.add('hidden');document.getElementById('product').classList.remove('hidden');
   document.getElementById('welcome').textContent='Your product is activated on this device. Loading your purchased chapters...';
   const box=document.getElementById('chapters');box.innerHTML='<p>⏳ Loading chapters...</p>';
@@ -37,7 +36,7 @@ async function activate(){
   box.innerHTML='';
   for(const n of chapters){
     const re=new RegExp('^BudaBloom_Chapter_'+n+'(?:.*)\\.html$','i');
-    const file=(n===1) ? files.find(x=>x.type==='file'&&x.name===FIXED_CHAPTER_1) : files.find(x=>x.type==='file'&&re.test(x.name));
+    const file=files.find(x=>x.type==='file'&&re.test(x.name));
     const a=document.createElement('a');a.className='chapter';
     if(file){a.href='https://tzofokeng-cmyk.github.io/budabloom-maths-rescue-web/'+encodeURIComponent(file.name);a.target='_blank';a.rel='noopener';a.textContent='Chapter '+n+' — '+TITLES[n];}
     else{a.href='#';a.textContent='Chapter '+n+' — '+TITLES[n]+' (file not found)';}
