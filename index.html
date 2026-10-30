@@ -35,7 +35,7 @@ async function activate(){
   const files=await gr.json();
   box.innerHTML='';
   for(const n of chapters){
-    const re=new RegExp('^BudaBloom_Chapter_'+n+'(?:.*)\\.html$','i');
+    const re=n===9 ? /^(?:Chapter_9|BudaBloom_Chapter_9)(?:.*)\.html$/i : new RegExp('^BudaBloom_Chapter_'+n+'(?:.*)\\.html$','i');
     const file=files.find(x=>x.type==='file'&&re.test(x.name));
     const a=document.createElement('a');a.className='chapter';
     if(file){a.href='https://tzofokeng-cmyk.github.io/budabloom-maths-rescue-web/'+encodeURIComponent(file.name);a.target='_blank';a.rel='noopener';a.textContent='Chapter '+n+' — '+TITLES[n];}
